@@ -1,3 +1,5 @@
+import {css} from './utils';
+
 const text = `
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, rem!
 `;
@@ -9,7 +11,12 @@ export const model = [
 
     new TitleBlock( 'Конструктор сайтов на чистом JavaScript', {
       tag: 'h1',
-      styles: 'background: darkred; color: #fff; text-align: center; padding: 1rem;'
+      styles: css({
+        background: 'darkred',
+        color: '#fff',
+        'text-align': 'center',
+        padding: '1rem'
+      })
     }),
 
     new ImageBlock (img, {
